@@ -1,12 +1,13 @@
 import React from 'react';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Slider from './components/Slider';
 import Welcome from './components/Welcome';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [count, setCount] = useState(0)
