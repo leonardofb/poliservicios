@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
+import About from "./components/About";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import MainContent from "./components/MainContent";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <MainContent />
+      <Slider />
+      <About />
+      <Services />
+      <Testimonials />
       <Footer />
     </div>
   );

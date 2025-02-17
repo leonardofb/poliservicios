@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
 
-const Slider = () => {
-    return (
-        <div className="slider">
-            {/* Aquí va tu código HTML del slider */}
+function Slider() {
+  return (
+    <section className="w3l-main-slider banner-slider" id="home">
+      <div className="slider-info banner-view banner-top1">
+        <div className="container">
+          <div className="banner-info">
+            <h3>Brindamos soluciones en <span>tecnología, seguridad y mantenimiento</span></h3>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
+            <a href="#about" className="btn btn-style btn-outline-light">Read More</a>
+          </div>
         </div>
-    );
-};
+      </div>
+    </section>
+  );
+}
 
 export default Slider;
