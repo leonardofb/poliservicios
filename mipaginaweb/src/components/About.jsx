@@ -1,22 +1,37 @@
-import React from "react";
+import React from 'react';
 
-function About() {
-  return (
-    <section id="about" className="w3l-index2">
-      <div className="container py-md-5">
-        <div className="row">
-          <div className="col-lg-6">
-            <img src="assets/images/ab1.jpg" alt="About Us" className="radius-image img-fluid" />
-          </div>
-          <div className="col-lg-6 ps-lg-5">
-            <h3>Helping businesses become what they <span>can be</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#contact" className="btn btn-primary">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+const About = () => {
+    return (
+        <section className="w3l-index2" id="about">
+            <div className="midd-w3 py-5">
+                <div className="container py-md-5 py-3">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="w3shape position-relative">
+                                <img src="assets/images/ab1.jpg" alt="" className="radius-image img-fluid" />
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self ps-lg-5">
+                            <div className="title-content text-left">
+                                <h6 className="title-subhny mb-2"><span>Our Story</span></h6>
+                                <h3 className="title-w3l">Helping business become what they
+                                    <span className="span-bold">can be</span>
+                                </h3>
+                            </div>
+                            <p className="mt-md-4 mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                                elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+                                dolor sit, amet elit. Dolor ipsum non velit, culpa! Vivamus a et ut justo, init in dolor et.</p>
+                            <div className="w3l-two-buttons">
+                                <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span className="fas fa-angle-double-right ms-2"></span></a>
+                                <a href="#view" className="btn btn-outline-primary btn-style mt-lg-5 mt-4 ms-2">Contact Us<span className="fas fa-angle-double-right ms-2"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export default About;
