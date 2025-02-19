@@ -1,5 +1,5 @@
 import React from 'react';
-
+import RequestConsultation from './RequestConsultation'; // Asegúrate de que la ruta sea correcta
 const Services = () => {
     return (
         <section className="w3l-services2" id="services">
@@ -37,6 +37,8 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+
+            <RequestConsultation />
         </section>
     );
 };
