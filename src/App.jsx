@@ -1,5 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
+import Grids3 from './components/Grids3';
+import AboutSection from './components/AboutSection';
+import VideoSection from './components/VideoSection';
+import ServicesSection from './components/ServicesSection';
+import TestimonialsSection from './components/TestimonialsSection';
 import MainSlider from './components/MainSlider';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
@@ -18,6 +23,11 @@ const App = () => {
             <Services />
             <Testimonials />
             <Footer />
+            <AboutSection />
+            <VideoSection />
+            <ServicesSection />
+            <TestimonialsSection />
+            <Grids3 />
         </div>
     );
 };

@@ -1,3 +1,4 @@
+// src/components/Footer.jsx
 import React from 'react';
 
 const Footer = () => {
@@ -11,6 +12,7 @@ const Footer = () => {
                             <a href="#" className="btn btn-secondary btn-style">Try it For Free <span className="fas fa-angle-double-right ms-2"></span></a>
                         </div>
                     </div>
+
                     <div className="row footer-top-29 mt-md-5 mt-4">
                         <div className="col-lg-4 col-md-6 footer-list-29 footer-1 pe-lg-5">
                             <h6 className="footer-title-29">About</h6>
@@ -68,7 +70,7 @@ const Footer = () => {
                     </div>
                     <div className="bottom-copies text-center">
                         <p className="copy-footer-29">© 2021 KoDeal. All rights reserved. Design by
-                            <a href="https://w3layouts.com/" target="_blank" rel="noopener noreferrer"> W3Layouts</a>
+                            <a href="https://w3layouts.com/" target="_blank"> W3Layouts</a>
                         </p>
                     </div>
                 </div>
@@ -76,5 +78,4 @@ const Footer = () => {
         </footer>
     );
 };
-
 export default Footer;
