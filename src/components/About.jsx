@@ -18,10 +18,7 @@ const About = () => {
                                     <span className="span-bold">can be</span>
                                 </h3>
                             </div>
-                            <p className="mt-md-4 mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                                ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
-                                elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
-                                dolor sit, amet elit. Dolor ipsum non velit, culpa! Vivamus a et ut justo, init in dolor et.</p>
+                            <p className="mt-md-4 mt-3">Texto a cambiar</p>
                             <div className="w3l-two-buttons">
                                 <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span className="fas fa-angle-double-right ms-2"></span></a>
                                 <a href="#view" className="btn btn-outline-primary btn-style mt-lg-5 mt-4 ms-2">Contact Us<span className="fas fa-angle-double-right ms-2"></span></a>
