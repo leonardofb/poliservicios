@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://leonardofb.github.io/poliservicios/mipaginaweb",
+  "homepage": "https://leonardofb.github.io/poliservicios",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
