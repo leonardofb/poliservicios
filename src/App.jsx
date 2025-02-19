@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header3';
-//import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import MainSlider from './components/MainSlider';
 import About from './components/About'; // O AboutSection
 import Services from './components/Services'; // O ServicesSection
@@ -22,7 +22,7 @@ const App = () => {
             <Header />
             <MainSlider />
             <Grids3 />
-          
+            <Navbar />
             <About />       
             <VideoSection />
             <Services />
