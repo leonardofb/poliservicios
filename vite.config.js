@@ -15,12 +15,18 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           if (/\.(png|jpe?g|svg|gif|webp)$/.test(assetInfo.name)) {
-            return 'assets/images/[name][extname]'; // Mantiene la estructura sin cambiar los nombres
+            return 'assets/images/[name][extname]'; // Mantiene la estructura de imágenes
+          }
+          if (/\.(woff|woff2|ttf|otf)$/.test(assetInfo.name)) {
+            return 'assets/webfonts/[name][extname]'; // Mantiene la estructura de fuentes
           }
           if (assetInfo.name?.endsWith('.css')) {
-            return 'assets/css/[name]-[hash][extname]';
+            return 'assets/css/[name]-[hash][extname]'; // Mantiene la estructura de CSS
           }
-          return 'assets/[name]-[hash][extname]';
+          if (assetInfo.name?.endsWith('.js')) {
+            return 'assets/js/[name]-[hash][extname]'; // Mantiene la estructura de JS
+          }
+          return 'assets/[name]-[hash][extname]'; // Para otros tipos de archivos
         }
       }
     }
