@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './components/Header3';
+//import Navbar from './components/Navbar';
 import MainSlider from './components/MainSlider';
 import About from './components/About'; // O AboutSection
 import Services from './components/Services'; // O ServicesSection
@@ -17,9 +18,11 @@ import TestimonialsSection from './components/TestimonialsSection';
 const App = () => {
     return (
         <div>
+            
             <Header />
             <MainSlider />
             <Grids3 />
+          
             <About />       
             <VideoSection />
             <Services />

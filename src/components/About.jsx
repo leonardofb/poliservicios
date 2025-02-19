@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="w3l-index2" id="about">
+        <section className="fondo1" id="about">
             <div className="midd-w3 py-5">
                 <div className="container py-md-5 py-3">
                     <div className="row">

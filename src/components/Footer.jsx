@@ -70,7 +70,7 @@ const Footer = () => {
                     </div>
                     <div className="bottom-copies text-center">
                         <p className="copy-footer-29">© 2021 KoDeal. All rights reserved. Design by
-                            <a href="https://w3layouts.com/" target="_blank"> W3Layouts</a>
+                            <a href="https://poliservicios.com.co" target="_blank"> W3Layouts y leonardo fierro</a>
                         </p>
                     </div>
                 </div>
