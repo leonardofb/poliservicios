@@ -15,7 +15,7 @@ const Services = () => {
                                 Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras varius lorem ac velit pharetra.
                             </p>
                             <div className="w3l-button mt-lg-5 mt-4">
-                                <a href="services.html" className="btn btn-primary btn-style mt-2">Read More <span className="fas fa-angle-double-right ms-2"></span></a>
+                                <a href="services.html" className="btn btn-primary btn-style mt-2">Leer Más <span className="fas fa-angle-double-right ms-2"></span></a>
                             </div>
                         </div>
                         <div className="col-lg-6 cwp23-text mt-lg-0 mt-5 ps-lg-5">

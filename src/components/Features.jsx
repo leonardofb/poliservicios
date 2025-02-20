@@ -13,7 +13,7 @@ const Features = () => {
                                 Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
                                 amet. Vivamus a et ut justo, init in dolor.
                             </p>
-                            <a href="services.html" className="btn btn-primary btn-style mt-lg-5 mt-4"> Read More <span className="fas fa-angle-double-right ms-2"></span></a>
+                            <a href="services.html" className="btn btn-primary btn-style mt-lg-5 mt-4"> Leer Más <span className="fas fa-angle-double-right ms-2"></span></a>
                         </div>
                     </div>
                     <div className="col-lg-4 mb-lg-0 mb-md-5 mb-4">

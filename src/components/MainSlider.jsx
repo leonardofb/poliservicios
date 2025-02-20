@@ -11,7 +11,7 @@ const MainSlider = () => {
                                 <h3>Brindamos soluciones<span> en tecnología, seguridad y mantenimiento</span></h3>
                                 <div className="banner-info-top">
                                     <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
-                                    <a href="about.html" className="btn btn-style btn-outline-light mt-sm-5 mt-4">Read More <span className="fas fa-angle-double-right ms-2"></span></a>
+                                    <a href="about.html" className="btn btn-style btn-outline-light mt-sm-5 mt-4">Leer Más <span className="fas fa-angle-double-right ms-2"></span></a>
                                 </div>
                             </div>
                         </div>

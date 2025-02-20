@@ -8,7 +8,7 @@ function Slider() {
           <div className="banner-info">
             <h3>Brindamos soluciones en <span>tecnología, seguridad y mantenimiento</span></h3>
             <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
-            <a href="#about" className="btn btn-style btn-outline-light">Read More</a>
+            <a href="#about" className="btn btn-style btn-outline-light">Leer Más</a>
           </div>
         </div>
       </div>

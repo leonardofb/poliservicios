@@ -20,7 +20,7 @@ const About = () => {
                             </div>
                             <p className="mt-md-4 mt-3">Texto a cambiar</p>
                             <div className="w3l-two-buttons">
-                                <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span className="fas fa-angle-double-right ms-2"></span></a>
+                                <a href="about.html" className="btn btn-style btn-primary mt-lg-5 mt-4">Leer Más <span className="fas fa-angle-double-right ms-2"></span></a>
                                 <a href="#view" className="btn btn-outline-primary btn-style mt-lg-5 mt-4 ms-2">Contact Us<span className="fas fa-angle-double-right ms-2"></span></a>
                             </div>
                         </div>
