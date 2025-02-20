@@ -1,0 +1,15 @@
+/* src/components/Home.module.css */
+
+  .home {
+    background-color: #b3a8a8; /* Fondo gris claro para contraste */
+    min-height: 100vh;
+    padding-top: 80px; /* Espacio para evitar que el header lo cubra */
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  

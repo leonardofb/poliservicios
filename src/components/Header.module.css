@@ -1,45 +1,124 @@
-/* src/components/Header.module.css */
-
+/* Estilos base del header */
 .header {
-  background-color: #f8f9fa; /* Color de fondo */
-  padding: 1rem; /* Espaciado */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: rgb(22, 21, 21);
 }
-
+header.scrolled {
+  background-color: rgb(22, 21, 21);
+  background-color: transparent; /* Fondo transparente al inicio */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+/* Ajustes para el navbar */
 .navbar {
-  display: flex; /* Flexbox para la barra de navegación */
-  justify-content: space-between; /* Espaciado entre elementos */
-  align-items: center; /* Centrar verticalmente */
+  transition: color 0.3s ease-in-out;
+}
+/* Contenedor del navbar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.navbar-brand {
-  font-size: 1.5rem; /* Tamaño de fuente para el nombre de la marca */
-  color: #0d6efd; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
+brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; /* Blanco cuando el fondo es transparente */
+  transition: color 0.3s ease-in-out;
+}
+.header.scrolled .brand {
+  color: #eb291b; /* Azul cuando el header se vuelve blanco */
 }
 
+.brand:hover {
+  color: var(--bs-dark);
+}
+
+
+
+/* Estilos del menú de navegación */
+.navbarNav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem {
+  list-style: none;
+}
+/* Ajustes de los enlaces del menú */
 .nav-link {
-  color: #212529; /* Color de los enlaces */
-  margin: 0 1rem; /* Espaciado entre enlaces */
+  color: rgb(255, 255, 255) !important; /* Blanco en el estado inicial */
+  color: var(--bs-dark);
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
-
+.header.scrolled .nav-link {
+  color: #f17f33c4 !important; /* Azul cuando el header es blanco */
+}
 .nav-link:hover {
-  color: #0d6efd; /* Color al pasar el mouse */
+  color: #ce7909 !important;
 }
 
+/* Estilos del botón de usuario */
 .search-right {
-  display: flex; /* Flexbox para la sección de búsqueda */
-  align-items: center; /* Centrar verticalmente */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-search {
+  color: var(--bs-dark);
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-search:hover {
+  color: var(--bs-primary);
 }
 
 .phone-btn {
-  background-color: #fff; /* Color de fondo del botón */
-  border: 1px solid #0d6efd; /* Borde del botón */
-  color: #0d6efd; /* Color del texto del botón */
-  padding: 0.5rem 1rem; /* Espaciado interno */
-  border-radius: 0.25rem; /* Bordes redondeados */
+  background-color: var(--bs-white);
+  border: 2px solid var(--bs-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 .phone-btn:hover {
-  background-color: #0d6efd; /* Color de fondo al pasar el mouse */
-  color: #fff; /* Color del texto al pasar el mouse */
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  transform: scale(1.05);
+}
+
+/* Animación de aparición para el navbar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Menú responsive */
+@media (max-width: 768px) {
+  .navbarNav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+  }
 }
