@@ -1,0 +1,43 @@
+/* src/components/About.module.css */
+
+.aboutSection {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .middW3 {
+    padding: 50px 0;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title-subhny span {
+    color: #0d6efd;
+    font-weight: bold;
+  }
+  
+  .title-w3l {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .spanBold {
+    color: #0d6efd;
+  }
+  
+  .buttonContainer {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  

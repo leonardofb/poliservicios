@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="contacts-9 py-lg-5 py-md-4">
                     <div className="container">
                         <div className="header-title text-center">
-                            <h6 className="title-subhny"><span>Contact Us</span></h6>
+                            <h6 className="title-subhny"><span>¡Hablemos!</span></h6>
                             <h3 className="title-w3l mb-2">Let’s Talk About
                                 <span className="span-bold"> Your Project</span>
                             </h3>

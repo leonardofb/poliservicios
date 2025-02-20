@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Navbar from './components/Navbar'; // Asegúrate de que la ruta sea correcta
+//import Navbar from './components/Navbar'; // Asegúrate de que la ruta sea correcta
 import About from './components/About'; // O AboutSection
 import Services from './components/Services'; // O ServicesSection
 import Footer from './components/Footer';

@@ -32,7 +32,7 @@ const Footer = () => {
                             <h6 className="footer-title-29">Links</h6>
                             <div className="footer-listw3-grids">
                                 <ul className="footer-listw3">
-                                    <li><a href="#us">About Us</a></li>
+                                    <li><a href="#us">¿Por qué elegirnos?</a></li>
                                     <li><a href="#team">Our Team</a></li>
                                     <li><a href="#pro">Projects</a></li>
                                     <li><a href="#career">Careers</a></li>
