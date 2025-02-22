@@ -35,6 +35,7 @@ export default MainSlider;
 
 
 
+
 /*import React from 'react';
 
 const MainSlider = () => {

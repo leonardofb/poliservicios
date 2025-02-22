@@ -3,56 +3,86 @@
 .mainSlider {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh; // Ajustamos altura
   background: url("/assets/images/banner1.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; // Alineamos el contenido a la izquierda
+  text-align: left; // Alineamos el texto a la izquierda
+  padding-left: 10%; // Espacio desde el borde izquierdo
+
+  /* Capa oscura de fondo */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); // Aumentamos la opacidad para mejor contraste
+    z-index: 1;
+  }
 }
 
 .sliderInfo {
   position: relative;
   z-index: 2;
-  text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-  padding: 50px;
-  border-radius: 10px;
+  max-width: 600px; // Limitamos el ancho del contenido para evitar que ocupe toda la pantalla
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // Alineamos el contenido a la izquierda
+  padding: 40px;
 }
 
 .bannerInfo h3 {
-  font-size: 64px;
-  line-height: 74px;
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .bannerInfo span {
+  display: block;
   font-weight: 700;
-  color: #f8d210; /* Amarillo para resaltar */
+  color: #f8d210; // Amarillo para resaltar
 }
 
 .bannerInfoTop p {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: white;
+  margin-bottom: 20px;
 }
 
+/* Botón alineado a la izquierda */
 .btn {
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-top: 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  background-color: #f8d210 !important;
+  color: #000 !important;
 }
 
-/* Ajuste para efecto de capa oscura */
-.mainSlider::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad */
-  z-index: 1;
+/* Responsive */
+@media (max-width: 768px) {
+  .mainSlider {
+    height: 70vh; // Reduce altura en móviles
+    padding-left: 5%;
+  }
+
+  .bannerInfo h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .bannerInfoTop p {
+    font-size: 16px;
+  }
 }

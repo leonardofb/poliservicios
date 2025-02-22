@@ -1,0 +1,68 @@
+/* src/components/Services.module.scss */
+
+.servicesSection {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .servicesContainer {
+    padding: 50px 0;
+  }
+  
+  .subtitle span {
+    color: #0d6efd;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .boldText {
+    color: #f8d210;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttonContainer {
+    margin-top: 20px;
+  }
+  
+  /* Estilos de la galería de imágenes */
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .column img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efecto al pasar el mouse sobre las imágenes */
+  .column img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.6rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .imageGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
