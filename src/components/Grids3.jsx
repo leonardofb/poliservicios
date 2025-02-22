@@ -1,11 +1,12 @@
 // src/components/Grids3.jsx
 import React from 'react';
+import styles from './Grids3.module.css';
 
 const Grids3 = () => {
     const items = [
-        { img: 'assets/images/g1.jpg', category: 'Action', title: 'We have got minds in action' },
-        { img: 'assets/images/g2.jpg', category: 'Brand', title: 'Plugging ideas to your brand' },
-        { img: 'assets/images/g3.jpg', category: 'Success', title: 'Ideas in charge of your Success' }
+        { img: 'assets/images/g1.jpg', category: 'Action', title: 'Encuentra Accesorios de Tecnologìa' },
+        { img: 'assets/images/Electricista2.jpg', category: 'Brand', title: 'Somos expertos en solucionar fallas en la red eléctrica, desde cortocircuitos hasta problemas en los voltajes y transformadores. Con nuestra atención rápida, llegamos en tan solo 30 minutos para reparar y solucionar cualquier inconveniente en tu red eléctrica.' },
+        { img: 'assets/images/g3.jpg', category: 'Success', title: 'Productos Automatizaciones para dispositivos' }
     ];
 
     return (

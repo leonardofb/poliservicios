@@ -6,7 +6,7 @@ import g3 from "../assets/images/g3.jpg";
 const Bottom3Grids = () => {
   const grids = [
     { img: g1, category: "Action", title: "We have got minds in", highlight: "action" },
-    { img: g2, category: "Brand", title: "Plugging ideas to your", highlight: "brand" },
+    { img: g2, category: "Electricistas a Domicilio", title: "Plugging ideas to your", highlight: "brand" },
     { img: g3, category: "Success", title: "Ideas in charge of your", highlight: "Success" },
   ];
 
