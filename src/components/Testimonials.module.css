@@ -1,0 +1,133 @@
+/* Testimonials.module.css */
+
+/* Sección principal */
+.testimonialsSection {
+    background: var(--bg-light);
+    padding: 80px 15px;
+}
+
+/* Contenedor general */
+.testimonialsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Testimonios */
+.testimonialWidth {
+    margin: auto;
+}
+
+/* Tarjeta del testimonio */
+.testimonial {
+    display: block;
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+/* Bloque de texto */
+.testimonial blockquote {
+    font-size: 1.1em;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--heading-color);
+    position: relative;
+}
+
+.testimonial blockquote i {
+    color: var(--heading-color);
+    font-size: 50px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* Contenedor de imagen y datos */
+.testiDes {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Imagen del cliente */
+.testImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.testImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Información del cliente */
+.peopl {
+    text-align: left;
+}
+
+.peopl h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+.identity {
+    font-size: 17px;
+    color: #777;
+    opacity: 0.8;
+}
+
+/* Dots del carrusel */
+.owlDots {
+    margin: 0 auto;
+    text-align: center;
+    bottom: -70px;
+}
+
+.owlDot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 1px;
+    background: var(--heading-color);
+    display: block;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.owlDot.active span,
+.owlDot:hover span {
+    background: var(--secondary-color);
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonialsSection {
+        padding: 50px 10px;
+    }
+
+    .testimonial {
+        padding: 30px;
+    }
+
+    .testiDes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testImg {
+        margin: 0 auto 10px;
+    }
+}
+
