@@ -1,27 +1,41 @@
-// src/components/Grids3.jsx
 import React from 'react';
 import styles from './Grids3.module.css';
 
 const Grids3 = () => {
-    const items = [
-        { img: 'assets/images/g1.jpg', category: 'Action', title: 'Encuentra Accesorios de Tecnologìa' },
-        { img: 'assets/images/Electricista2.jpg', category: 'Brand', title: 'Somos expertos en solucionar fallas en la red eléctrica, desde cortocircuitos hasta problemas en los voltajes y transformadores. Con nuestra atención rápida, llegamos en tan solo 30 minutos para reparar y solucionar cualquier inconveniente en tu red eléctrica.' },
-        { img: 'assets/images/g3.jpg', category: 'Success', title: 'Productos Automatizaciones para dispositivos' }
+    const services = [
+        { 
+            img: 'assets/images/aileo.jpg', 
+            category: 'Seguridad y Conectividad', 
+            title: 'Cámaras de Videovigilancia y Redes de Datos', 
+            description: 'Protege tu hogar o negocio con videovigilancia avanzada. Instalamos y mantenemos redes de datos para una conexión estable y segura.'
+        },
+        { 
+            img: 'assets/images/Electricista2.jpg', 
+            category: 'Servicios Eléctricos', 
+            title: 'Soluciones Eléctricas Profesionales', 
+            description: 'Diagnóstico y reparación de fallas eléctricas. Instalaciones seguras y optimización de redes para evitar fallos inesperados.' 
+        },
+        { 
+            img: 'assets/images/g3.jpg', 
+            category: 'Automatización Inteligente', 
+            title: 'Automatización para Hogares y Negocios', 
+            description: 'Controla luces, puertas y dispositivos con un solo clic. Mejora la eficiencia y seguridad con tecnología inteligente.' 
+        }
     ];
 
     return (
-        <div className="w3l-3-grids" id="grids-3">
-            <div className="container-fluid mx-lg-0">
-                <div className="row pt-sm-0 pt-5">
-                    {items.map((item, index) => (
-                        <div key={index} className="col-lg-4 col-sm-6 mt-sm-0 px-md-0 w3-gridhny-1 position-relative">
-                            <div className="grids3-info">
-                                <a href="#" className="d-block zoom">
-                                    <img src={item.img} alt="" className="img-fluid news-image" />
-                                </a>
-                                <div className="w3-grids3-info">
-                                    <h6><a href="#category" className="category d-block">{item.category}</a></h6>
-                                    <h4><a href="#">{item.title}</a></h4>
+        <div className={styles.gridsContainer} id="grids-3">
+            <div className="container-fluid">
+                <div className="row">
+                    {services.map((service, index) => (
+                        <div key={index} className={`col-lg-4 col-md-6 col-sm-12 ${styles.gridItem}`}>
+                            <div className={styles.imageContainer}>
+                                <img src={service.img} alt={service.title} className={styles.newsImage} />
+                                <div className={styles.overlay}>
+                                    <h6 className={styles.category}>{service.category}</h6>
+                                    <h4 className={styles.title}>{service.title}</h4>
+                                    <p className={styles.description}>{service.description}</p>
+                                    <a href="#" className={styles.button}>Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -33,3 +47,4 @@ const Grids3 = () => {
 };
 
 export default Grids3;
+
