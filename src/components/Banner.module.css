@@ -1,0 +1,36 @@
+.banner {
+    background: url("../images/banner1.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.bannerContent {
+    max-width: 400px;
+}
+
+.banner h3 {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+}
+
+.readMore {
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.readMore:hover {
+    background: #0fbcf9;
+    border-color: #0fbcf9;
+}

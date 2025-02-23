@@ -10,6 +10,7 @@ import Home from './components/Home'; // Asegúrate de importar el nuevo compone
 import './App.css'; // Asegúrate de importar tus estilos
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import Banner from "./components/Banner";
 
 
 const App = () => {

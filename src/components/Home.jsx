@@ -8,8 +8,7 @@ import Services from './Services';
 import Testimonials from './Testimonials';
 import TestimonialsSection from './TestimonialsSection';
 import Features from './Features';
-import styles from './Home.module.css'; // Importamos los estilos de CSS Modules
-
+import styles from './Home.module.css'; // Importamos los estilos de CSS Modules sobro el componente Home
 const Home = () => {
     return (
         <div className={styles.home}> {/* Se aplica el estilo desde CSS Modules */}
