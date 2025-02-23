@@ -1,0 +1,11 @@
+.features {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+}
+
+/* 🌙 Estilos para modo oscuro */
+:global([data-theme="dark"]) .features {
+  background-color: #121212 !important;
+  color: white !important;
+}

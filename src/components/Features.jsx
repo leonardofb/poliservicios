@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Features.module.css';
 
 const Features = () => {
     return (
-        <section className="w3l-featureshny py-5" id="features">
+        <section className={`w3l-featureshny py-5 ${styles.features}`} id="features">
             <div className="container py-md-4 py-2">
                 <div className="row align-items-center">
                     <div className="col-lg-8 pe-lg-5 mb-lg-0 mb-5">

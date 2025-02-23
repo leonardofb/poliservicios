@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light stroke py-lg-0">
       <h1>
         <a className="navbar-brand" href="/">
-          Poli<span className="sublog">Servicios</span>
+          Poli<span className="sublog">Serviciossdfsdfsdfsdf</span>
         </a>
       </h1>
       <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">

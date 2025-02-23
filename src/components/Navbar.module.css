@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbarContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+  text-decoration: underline;
+}
+
+.homeButton {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.homeButton:hover {
+  background-color: #0b5ed7;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #0d6efd;
+}
+
+.header.scrolled .navLink {
+  color: black;
+}
+
+.header.scrolled .navLink.active {
+  color: #0d6efd;
+}
+
+.darkModeButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.header.scrolled .darkModeButton {
+  color: black;
+}

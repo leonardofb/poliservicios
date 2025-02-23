@@ -1,16 +1,18 @@
 .header {
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1050;
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 1000;
+  padding: 1rem 0;
 }
 
-/* Cuando se hace scroll, el fondo se vuelve transparente */
 .header.scrolled {
-  background-color: transparent !important;
-  box-shadow: none;
+  background: black;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 🌙 Estilos específicos para modo oscuro */
@@ -29,9 +31,6 @@
 :global([data-theme="dark"]) .nav-link:hover {
   color: #cccccc !important;
 }
-
-
-
 
 /* Contenedor */
 .container {
@@ -58,6 +57,12 @@
 }
 
 /* Navbar */
+.navbar {
+  display: flex;
+  gap: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 .navbarNav {
   display: flex;
   gap: 1rem;
@@ -89,6 +94,29 @@
   }
 }
 
-.navbar {
-  animation: fadeIn 0.5s ease-in-out;
+.logo {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #0d6efd;
+}
+
+.darkModeButton {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
