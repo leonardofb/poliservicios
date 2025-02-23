@@ -1,0 +1,82 @@
+/* VideoSection.module.css */
+
+/*--/w3l-video--*/
+.videoSection {
+    margin-bottom: -140px;
+}
+
+.index5 {
+    background: url(./assets/images/banner3.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    align-items: center;
+    border-radius: var(--border-radius);
+    height: 100vh;
+}
+
+.index5::before {
+    content: "";
+    background: var(--layer);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}
+
+.abpageContent {
+    max-width: 800px;
+    margin-right: 0;
+}
+
+.middleSection h2 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+.index5 p,
+.vhnyPara {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.videoPlayIcon {
+    border: transparent;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 82px;
+}
+
+.videoPlayIcon span {
+    color: var(--secondary-color);
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+    transition: 0.3s ease-in-out;
+}
+
+.videoPlayIcon span:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.faPlay {
+    line-height: 55px;
+}
+
+.playView {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}

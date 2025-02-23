@@ -1,17 +1,16 @@
-// src/components/VideoSection.jsx
 import React from 'react';
+import styles from './VideoSelection.module.css'; // Importamos el módulo CSS correctamente
 
 const VideoSection = () => {
     return (
-        <section className="w3l-video-sec" id="video">
+        <section className={styles.videoSection} id="video">
             <div className="container">
-                <div className="w3l-index5 py-5">
-                    <div className="history-info align-self text-center py-5 my-lg-5">
+                <div className={styles.index5}>
+                    <div className={`${styles.abpageContent} text-center py-5 my-lg-5`}>
                         <div className="position-relative py-5 my-lg-5">
                             {/* Video en lugar del enlace externo */}
                             <video width="30%" controls>
                                 <source src="assets/videos/mivideo.mp4" type="video/mp4" />
-                                Tu navegador no soporta la reproducción de video.
                             </video>
                         </div>
                     </div>
@@ -23,6 +22,34 @@ const VideoSection = () => {
 
 export default VideoSection;
 
+
+/*
+
+
+import React from 'react';
+import styles from './VideoSection.module.css'; // Importamos el módulo CSS
+const VideoSection = () => {
+    return (
+        <section className="w3l-video-sec" id="video">
+            <div className="container">
+                <div className="w3l-index5 py-5">
+                    <div className="history-info align-self text-center py-5 my-lg-5">
+                        <div className="position-relative py-5 my-lg-5">
+                          
+                            <video width="30%" controls>
+                                <source src="assets/videos/mivideo.mp4" type="video/mp4" />
+                              
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default VideoSection;
+/*
 
 /*import React from 'react';
 
