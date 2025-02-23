@@ -6,7 +6,7 @@ const Banner = () => {
     <section className={styles.banner}>
       <div className={styles.bannerContent}>
         <h3>
-          Bienvenido a <span>PoliServicios</span>
+          Bienvenido a <span>PoliServicioss baner</span>
         </h3>
         <p>Soluciones tecnológicas para tu negocio</p>
         <button className={styles.readMore}>Conócenos</button>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Usamos Link en lugar de <a>
-import styles from "./About.module.css"; // Importamos los estilos CSS Modules
-import ab1 from "/assets/images/ab1.jpg"; // Importamos la imagen correctamente
+import { Link } from "react-router-dom";
+import styles from "./About.module.css";
+import ab1 from "/assets/images/ab1.jpg";
 
 const About = () => {
   return (
