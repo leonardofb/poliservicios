@@ -18822,7 +18822,7 @@ p.inner-page-para {
 .w3-pricing-inner-inf .pricing-header,
 .w3-pricing-inner-inf .pricing-header.set-2,
 .w3-pricing-inner-inf .pricing-header.set-3 {
-  background: url(../images/g2.jpg) no-repeat center;
+  background: url(../../assets/images/g2.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
