@@ -17565,17 +17565,15 @@ a.search-search:hover {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
-  -ms-background-size: cover;
+  background: url(../images/banner1.jpg) no-repeat center center;
   background-size: cover;
+  width: 100vw;  /* Ocupa el 100% del ancho de la ventana */
+  height: 100vh; /* Ocupa el 100% del alto de la ventana */
   z-index: 0;
   position: relative;
   display: grid;
   align-items: center;
-  min-height: 720px;
-  background-size: cover;
 }
-
 .w3l-main-slider .banner-top2 {
   background: url(../images/banner2.jpg) no-repeat center;
   background-size: cover;
@@ -17984,16 +17982,17 @@ section.w3l-project-main {
 }
 
 .w3l-project {
-  background: url(../images/banner1.jpg) no-repeat center;
-  -ms-background-size: cover;
+  background: url(../images/banner1.jpg) no-repeat center center;
   background-size: cover;
+  width: 100vw;  /* Ancho completo de la ventana */
+  height: 100vh; /* Altura completa de la ventana */
   z-index: 0;
   position: relative;
   display: grid;
   align-items: center;
-  background-size: cover;
   border-radius: var(--border-radius);
 }
+
 
 .w3l-project::before {
   content: "";
